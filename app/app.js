@@ -1,7 +1,8 @@
-angular.module("countdownApp", []);
+angular.module("countdownApp", ["ngMaterial"]);
 
 angular.module("countdownApp").controller("MainController", [function(){
     var self = this;
 
-    this.message = "allo";
+    
+
 }]);

@@ -1,9 +1,34 @@
 <html ng-app="countdownApp">
     <head>
-        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"></script>
-        <script type="text/javascript" src="app/app.js"></script>
+        <!-- Angular material -->
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/angular-material/1.1.20/angular-material.min.css"></script>
+
+        <!-- App components -->
+        <link rel="stylesheet" type="text/css" href="app/components/dateDisplay/dateDisplay.css"></script>
+        <link rel="stylesheet" type="text/css" href="app/components/questionDisplay/questionDisplay.css"></script>
     </head>
     <body ng-controller="MainController as ctrl">
-        {{ctrl.message}}
+
+        <date-display></date-display>
+        <question-display></question-display>
+
+        <!-- AngularJS.js -->
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"></script>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular-animate.min.js"></script>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular-aria.min.js"></script>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular-messages.min.js"></script>
+
+        <!-- AngularJS Material.js -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-material/1.1.20/angular-material.js"></script>
+        
+        <!-- Moment.js -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/locale/fr-ca.js"></script>
+
+        <script type="text/javascript" src="app/app.js"></script>
+        
+        <!-- App components -->
+        <script type="text/javascript" src="app/components/dateDisplay/dateDisplay.js"></script>
+        <script type="text/javascript" src="app/components/questionDisplay/questionDisplay.js"></script>
     </body>
 </html>

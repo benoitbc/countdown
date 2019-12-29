@@ -1,0 +1,19 @@
+
+<div layout="row" class="date-display">
+    <div flex layout="column" class="days-box">
+        <div>{{$ctrl.differenceDays}}</div>
+        <div>{{$ctrl.differenceDays > 1 ? "jours" : "jour"}}</div>
+    </div>
+    <div flex layout="column" class="hours-box">
+        <div>{{$ctrl.differenceHours}}</div>
+        <div>{{$ctrl.differenceHours > 1 ? "heures" : "heure"}}</div>
+    </div>
+    <div flex layout="column" class="minutes-box">
+        <div>{{$ctrl.differenceMinutes}}</div>
+        <div>{{$ctrl.differenceMinutes > 1 ? "minutes" : "minute"}}</div>
+    </div>
+    <div flex layout="column" class="seconds-box">
+        <div>{{$ctrl.differenceSeconds}}</div>
+        <div>{{$ctrl.differenceSeconds > 1 ? "secondes" : "seconde"}}</div>
+    </div>
+</div>

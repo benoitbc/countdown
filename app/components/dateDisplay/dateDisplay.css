@@ -1,0 +1,26 @@
+.date-display {
+
+}
+
+.date-display div {
+    padding: 5px;
+    text-align: center;
+}
+
+.days-box { background-color: #2196F3; }
+.hours-box { background-color: #4CAF50; }
+.minutes-box { background-color: #FF9800; }
+.seconds-box { background-color: #FF5722; }
+
+@media (max-width: 800px) {
+    .date-display div div:first-child { font-size: 40px; }
+    .date-display div div:nth-child(2) { font-size: 20px; }
+}
+@media (min-width: 800px) {
+    .date-display div div:first-child { font-size: 80px; }
+    .date-display div div:nth-child(2) { font-size: 30px; }
+}
+@media (min-width: 1200px) {
+    .date-display div div:first-child { font-size: 130px; }
+    .date-display div div:nth-child(2) { font-size: 40px; }
+}
