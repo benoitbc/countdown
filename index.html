@@ -4,13 +4,16 @@
         <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/angular-material/1.1.20/angular-material.min.css"></script>
 
         <!-- App components -->
+        <link rel="stylesheet" type="text/css" href="site.css"></script>
         <link rel="stylesheet" type="text/css" href="app/components/dateDisplay/dateDisplay.css"></script>
         <link rel="stylesheet" type="text/css" href="app/components/questionDisplay/questionDisplay.css"></script>
+        <link rel="stylesheet" type="text/css" href="app/components/newYear/newYear.css"></script>
     </head>
-    <body ng-controller="MainController as ctrl">
+    <body ng-controller="MainController as ctrl" layout="column">
 
-        <date-display></date-display>
-        <question-display></question-display>
+        <date-display current-image-number="$ctrl.currentImageNumber" show-answer="$ctrl.showAnswer" show-new-year="$ctrl.showNewYear"></date-display>
+        <question-display ng-if="!$ctrl.showNewYear" number="$ctrl.currentImageNumber" show-answer="$ctrl.showAnswer"></question-display>
+        <new-year ng-if="$ctrl.showNewYear"></new-year>
 
         <!-- AngularJS.js -->
         <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"></script>
@@ -25,10 +28,14 @@
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/locale/fr-ca.js"></script>
 
+        <!-- Lodash -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.15/lodash.min.js"></script>
+
         <script type="text/javascript" src="app/app.js"></script>
         
         <!-- App components -->
         <script type="text/javascript" src="app/components/dateDisplay/dateDisplay.js"></script>
         <script type="text/javascript" src="app/components/questionDisplay/questionDisplay.js"></script>
+        <script type="text/javascript" src="app/components/newYear/newYear.js"></script>
     </body>
 </html>

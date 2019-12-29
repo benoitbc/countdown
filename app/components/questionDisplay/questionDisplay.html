@@ -1,4 +1,9 @@
-
-<div class="question-display">
-    {{$ctrl.questions.length}}
+<div layout="column" class="question-display">
+    <div layout="row" style="height: 100%;">
+        <div flex="10" class="title">#{{$ctrl.question.number}}</div>
+        <div flex class="image">
+            <img ng-src="images/{{$ctrl.question.number < 10 ? '0' + $ctrl.question.number : $ctrl.question.number}}.png" />
+        </div>
+    </div>    
+    <div class="answer" ng-show="$ctrl.showAnswer">{{$ctrl.question.answer}}</div>
 </div>
