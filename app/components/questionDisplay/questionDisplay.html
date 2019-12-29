@@ -5,5 +5,5 @@
             <img ng-src="images/{{$ctrl.question.number < 10 ? '0' + $ctrl.question.number : $ctrl.question.number}}.png" />
         </div>
     </div>    
-    <div class="answer" ng-show="$ctrl.showAnswer">{{$ctrl.question.answer}}</div>
+    <div class="answer"><div ng-if="$ctrl.showAnswer">{{$ctrl.question.answer}}</div></div>
 </div>
